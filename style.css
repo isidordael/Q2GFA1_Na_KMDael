@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(96, 46, 46);
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+}
+.pagetitle{
+    color:rgb(32, 26, 26);
+    font-size: 18pt;
+}
+.links a{
+    padding-left: 1vw;
+    font-size: 18pt;
+}
+#vidbg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+.banner{
+    margin-top: 13vh;
+    background-color: rgba(89, 85, 71, 0.671);
+    display: block;
+    padding: 5vw;
+    background-position: center;
+
+}
+
+.bannerhead{
+    font-size: 30pt;
+    font-weight: 800;
+}
+
+.banner p{
+    font-size: 16pt;
+    font-weight: 300;
+}
+@media screen and (max-width: 600px){ 
+    nav{
+        position: relative;
+    }
+    .videobg{
+        background: url(../media/woof.jpg); 
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        z-index: -1;
+    }
+    #vidbg{
+        display: none;
+    }
+    .pagetitle{
+        background-color: rgb(87, 62, 62);
+        padding: 1vw;
+        color: rgb(72, 46, 46);
+    }
+    .links{
+        display: none;
+        position:absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgb(15, 15, 15);
+        z-index: 1;
+        background-color: rgb(87, 62, 62);
+    }
+    .links a{
+        color:rgb(41, 29, 29);
+        padding:20px 16px;
+        display:block;
+    }
+    .links a:hover{
+        background-color:rgb(70, 50, 50);
+    }
+    nav:hover .links{ 
+        display: block;
+    }
+    nav:hover .pagetitle{
+        background-color: rgb(87, 62, 62);
+    }
+}
+
